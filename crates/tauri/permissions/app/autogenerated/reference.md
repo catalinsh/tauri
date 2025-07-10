@@ -8,7 +8,6 @@ Default permissions for the plugin.
 - `allow-name`
 - `allow-tauri-version`
 - `allow-identifier`
-- `allow-bundle-type`
 
 ## Permission Table
 
@@ -67,32 +66,6 @@ Enables the app_show command without any pre-configured scope.
 <td>
 
 Denies the app_show command without any pre-configured scope.
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`core:app:allow-bundle-type`
-
-</td>
-<td>
-
-Enables the bundle_type command without any pre-configured scope.
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`core:app:deny-bundle-type`
-
-</td>
-<td>
-
-Denies the bundle_type command without any pre-configured scope.
 
 </td>
 </tr>

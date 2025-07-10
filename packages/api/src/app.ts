@@ -26,24 +26,6 @@ export type DataStoreIdentifier = [
 ]
 
 /**
- * Bundle type of the current application.
- */
-export enum BundleType {
-  /** Windows NSIS */
-  Nsis = 'nsis',
-  /** Windows MSI */
-  Msi = 'msi',
-  /** Linux Debian package */
-  Deb = 'deb',
-  /** Linux RPM */
-  Rpm = 'rpm',
-  /** Linux AppImage */
-  AppImage = 'appimage',
-  /** macOS app bundle */
-  App = 'app'
-}
-
-/**
  * Application metadata and related APIs.
  *
  * @module
@@ -224,10 +206,6 @@ async function setDockVisibility(visible: boolean): Promise<void> {
   return invoke('plugin:app|set_dock_visibility', { visible })
 }
 
-async function getBundleType(): Promise<BundleType> {
-  return invoke('plugin:app|bundle_type')
-}
-
 export {
   getName,
   getVersion,
@@ -239,6 +217,5 @@ export {
   setTheme,
   fetchDataStoreIdentifiers,
   removeDataStore,
-  setDockVisibility,
-  getBundleType
+  setDockVisibility
 }
